@@ -11,6 +11,8 @@ http://www.erlang.org/downloads
 3. Install celery using pip 
 ```bash
 pip install celery==3.1.0
+
+pip install sqlalchemy
 ```
 
 ## Celery Commands:
@@ -29,5 +31,6 @@ celery -A tasks worker --loglevel=info
 ```bash
 from tasks import add
 add.delay(45, 45)
+
 ```
 
