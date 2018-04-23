@@ -29,18 +29,18 @@ celery -A tasks worker --loglevel=info
 
 ## Python Shell:
 ```bash
->>from tasks import add
->>result = add.delay(5, 5)
->>result.status
+>> from tasks import add
+>> result = add.delay(5, 5)
+>> result.status
 'PENDING'
->>result.status    # After 10 seconds
+>> result.status    # After 10 seconds
 'SUCCESS'    
->>result = add.delay(5, 5)
->>result.ready()
+> >result = add.delay(5, 5)
+>> result.ready()
 'False'
->>result.ready()   # After 10 sec
+>> result.ready()   # After 10 sec
 'True'
->>result.get()
+>> result.get()
 10
 ```
 
