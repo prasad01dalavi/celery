@@ -15,9 +15,19 @@ pip install celery==3.1.0
 
 ## Celery Commands:
 ```bash
+# For a complete listing of the command-line options available
+celery worker --help
+
+# There are also several other commands available, and help is also available
+celery help
+
 # Start the celey app
 celery -A tasks worker --loglevel=info
+```
 
-# 
+## Python Shell:
+```bash
+from tasks import add
+add.delay(45, 45)
 ```
 
