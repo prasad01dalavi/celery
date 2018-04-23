@@ -8,6 +8,7 @@ http://www.rabbitmq.com/download.html
 2. Erlarge is a dependency for RabbitMQ. Download it from the following link:
 http://www.erlang.org/downloads
 
+3. Install celery using pip 
 ```bash
 pip install celery
 ```
