@@ -35,7 +35,7 @@ celery -A tasks worker --loglevel=info
 'PENDING'
 >> result.status    # After 10 seconds
 'SUCCESS'    
-> >result = add.delay(5, 5)
+>> result = add.delay(5, 5)
 >> result.ready()
 'False'
 >> result.ready()   # After 10 sec
