@@ -10,6 +10,6 @@ http://www.erlang.org/downloads
 
 3. Install celery using pip 
 ```bash
-pip install celery
+pip install celery==3.1.0
 ```
 
